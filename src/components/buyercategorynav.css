@@ -1,0 +1,25 @@
+/* BuyerCategoryNav.css */
+.buyer-category-nav {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 2px solid #000;
+    color: white;
+  }
+  
+  .category-button {
+    border: none;
+    background-color: transparent;
+    font-size: 20px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    cursor: pointer;
+    outline: none;
+    color: white;
+    text-decoration: none;
+    transition: border-bottom 0.3s ease-in-out;
+  }
+  
+  .category-button.selected {
+    border-bottom: 2px solid #007bff;
+  }
+  

@@ -1,0 +1,56 @@
+/* BuyerTopnav.css */
+.buyer-topnav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #030303;
+    border-bottom: grey;
+    margin-top: 5px;
+    border-width: 2px;
+    border-style: solid;
+  }
+  
+  .left-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .homebutton {
+    border: none;
+    margin: none;
+    background: none;
+    display: flex; /* Add display: flex to center its content */
+    align-items: center; /* Center vertically */
+    padding: 5px; /* Add some padding to visually separate the logo */
+  }
+  
+  .logo {
+    width: auto;
+    height: 40px;
+    margin: auto; /* Center horizontally within the button */
+  }
+  
+  .circular-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #030303;
+    margin-right: 20px;
+  }
+  
+  .right-section {
+    display: flex;
+    align-items: center;
+  }
+  
+  .coin {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .coins {
+    font-weight: bold;
+    margin-right: 10px;
+    color: white;
+  }
+  
