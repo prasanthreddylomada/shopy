@@ -1,0 +1,8 @@
+/* BuyProducts.css */
+.product-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-inline: 65px;
+  }
+  

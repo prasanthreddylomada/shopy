@@ -3,7 +3,7 @@ import './buyercategorynav.css'; // Import your CSS file for styling
 
 class BuyerCategoryNav extends Component {
   render() {
-    const categories = ['Shirts', 'Pants', 'Trousers', 'Inners', 'T-shirts'];
+    const categories = ['Shirts', 'Pants', 'Trousers', 'under-garments', 'T-shirts','shoes','accesories','sextoys'];
     const { selectedCategoryIndex, onSelectCategory } = this.props;
 
     return (
