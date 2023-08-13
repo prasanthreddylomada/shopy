@@ -16,7 +16,7 @@
     border-radius: 20px;
   }
   
-  .product-image img {
+  .product-image {
     max-width: 100px;
     max-height: 100px;
     margin-bottom: 20px;

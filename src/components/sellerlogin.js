@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './buyerlogin.css';
 import { Link } from 'react-router-dom';
 
 class SellerLogin extends Component {

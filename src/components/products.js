@@ -37,9 +37,8 @@ class Products extends Component {
 
     return (
       <div className="product-container">
-        <div className="product-image">
-          <img src={imageUrl} alt={name} />
-        </div>
+        
+          <img src={imageUrl} alt={name} className='product-image'/>
         <div className="product-details">
           <div className="left-part">
             <h3>{name}</h3>
