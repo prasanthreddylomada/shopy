@@ -1,0 +1,36 @@
+.main-container {
+    display: flex;
+    height: 100vh;
+    justify-content: space-around;
+  }
+  
+  .left,
+  .right {
+    width: 45%;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+  }
+  
+  .left {
+    color: #007bff;
+  }
+  
+  .right {
+    background-color: rgb(226, 226, 226);
+    border-radius: 30px;
+    padding: 20px;
+    height: 100%;
+  }
+  
+  .sold-product-row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .customer-product-row{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }

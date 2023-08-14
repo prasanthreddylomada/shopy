@@ -6,7 +6,9 @@ class SellerLogin extends Component {
     return (
       <div className="buyer-login-container">
         <img src="./metamask-logo.png" alt="Metamask Logo" className="logo" />
+        <Link to="/sellerhome">
         <button className="connect-button">login with Metamask</button>
+        </Link>
         <Link to="/buyerlogin">
         <button className="login-as-seller">Login as a buyer?</button>
         </Link>

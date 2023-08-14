@@ -1,0 +1,37 @@
+.seller-product {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 300px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+  }
+  
+  .seller-product:hover {
+    background-color: #e0e0e0;
+    transform: translateY(-3px);
+  }
+  
+  .product-image img {
+    max-width: 100px;
+    max-height: 100px;
+    margin-right: 10px;
+  }
+  
+  .product-info {
+    flex: 1;
+  }
+  
+  .product-info h3 {
+    margin: 0;
+    font-size: 1.2rem;
+  }
+  
+  .product-info p {
+    margin: 2px 0;
+    font-size: 1rem;
+  }
+  
