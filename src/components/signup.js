@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Signup.css';
 import { Navigate } from 'react-router-dom';
+import logo from '../Assets/Shopy.svg';
 
 class Signup extends Component {
   constructor(props) {
@@ -53,11 +54,11 @@ class Signup extends Component {
 
   render() {
     const { isNameValid, isPhoneValid } = this.state;
-
     return (
       <div className="signup-container">
         <div className="form-container">
           <form onSubmit={this.handleSubmit}>
+            <img src={logo} alt="Logo" className="signup-logo" />
             <div className={`input-group ${isNameValid ? '' : 'invalid'}`}>
               <label htmlFor="name">Name:</label>
               <input

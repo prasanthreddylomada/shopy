@@ -6,7 +6,7 @@ class BuyProducts extends Component {
     categories = ['Shirts', 'Pants', 'Trousers', 'under-garments', 'T-shirts','shoes','accesories','sextoys'];
     productsData = [
     {
-        id:1,
+      id:1,
       imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
       name: 'Product 1',
       size: 'Medium',
@@ -88,7 +88,7 @@ class BuyProducts extends Component {
   ];
 
   render() {
-    const { selectedCategoryIndex } = this.props;
+    const { selectedCategoryIndex ,coins} = this.props;
 
     const selectedCategory = this.categories[selectedCategoryIndex];
     const filteredProducts = this.productsData.filter(
@@ -104,6 +104,7 @@ class BuyProducts extends Component {
             name={product.name}
             size={product.size}
             price={product.price}
+            coins={coins}
           />
         ))}
       </div>

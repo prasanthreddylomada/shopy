@@ -6,8 +6,10 @@
     background-color: #030303;
     border-bottom: grey;
     margin-top: 5px;
+    margin-inline: 60px;
     border-width: 2px;
     border-style: solid;
+    
   }
   
   .left-section {
@@ -21,13 +23,14 @@
     background: none;
     display: flex; /* Add display: flex to center its content */
     align-items: center; /* Center vertically */
-    padding: 5px; /* Add some padding to visually separate the logo */
+    padding: 5px;
+    cursor:pointer;
   }
   
-  .logo {
+  .topnav-logo {
     width: auto;
     height: 40px;
-    margin: auto; /* Center horizontally within the button */
+    margin: auto;
   }
   
   .circular-photo {
@@ -35,7 +38,7 @@
     height: 50px;
     border-radius: 50%;
     background-color: #030303;
-    margin-right: 20px;
+    margin-right: 10px;
   }
   
   .right-section {
@@ -46,11 +49,12 @@
   .coin {
     width: 30px;
     height: 30px;
+    margin-right: 10px;
   }
   
   .coins {
     font-weight: bold;
-    margin-right: 10px;
     color: white;
+    margin-right: 2px;
   }
   

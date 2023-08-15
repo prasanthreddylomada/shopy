@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
-import './products.css'; // Import your CSS file for styling
-import BuyPopup from './buypopup'; // Import the BuyPopup component
+import './products.css';
+import BuyPopup from './buypopup';
 
 class Products extends Component {
   constructor(props) {
@@ -9,6 +9,7 @@ class Products extends Component {
     this.state = {
       isPopupOpen: false,
       useCoins: false,
+      numberOfCoins: 0, // Add the numberOfCoins state
     };
   }
 
@@ -21,24 +22,22 @@ class Products extends Component {
   };
 
   handlePurchase = () => {
-    // Handle the purchase logic here
-    // You can use this.props.price, this.props.name, etc. for the purchase details
     console.log('Purchase confirmed');
+    console.log('Number of Coins:', this.state.numberOfCoins); // Use numberOfCoins state
     this.closePopup();
   };
 
-  handleCheckboxChange = (event) => {
-    this.setState({ useCoins: event.target.checked });
+  handleSliderChange = (event) => {
+    this.setState({ numberOfCoins: parseInt(event.target.value) }); // Update numberOfCoins state
   };
 
   render() {
-    const { imageUrl, name, size, price } = this.props;
-    const { isPopupOpen, useCoins } = this.state;
+    const { imageUrl, name, size, price,coins } = this.props;
+    const { isPopupOpen, useCoins, numberOfCoins } = this.state;
 
     return (
       <div className="product-container">
-        
-          <img src={imageUrl} alt={name} className='product-image'/>
+        <img src={imageUrl} alt={name} className="product-image" />
         <div className="product-details">
           <div className="left-part">
             <h3>{name}</h3>
@@ -55,8 +54,9 @@ class Products extends Component {
           <BuyPopup
             onClose={this.closePopup}
             onPurchase={this.handlePurchase}
-            useCoins={useCoins}
-            onCheckboxChange={this.handleCheckboxChange}
+            numberOfCoins={numberOfCoins} // Pass numberOfCoins as a prop
+            onSliderChange={this.handleSliderChange}
+            coins={coins} // Pass the slider change handler
           />
         )}
       </div>

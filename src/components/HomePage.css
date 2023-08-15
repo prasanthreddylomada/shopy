@@ -7,14 +7,14 @@
     max-height: 150px;
   }
   
-  .logo {
-    max-width: 150px;
+  .home-logo {
+    width: 200px;
     margin-bottom: 20px;
   }
 
-  .logo img {
-    margin: 0; /* Reset margin */
-    padding: 0; /* Reset padding */
+  .home-logo img {
+    margin: 0; 
+    padding: 0; 
   }
   
   .login-button{

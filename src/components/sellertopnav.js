@@ -4,13 +4,13 @@ import dollarImage from '../Assets/dollar.png';
 import { Link } from 'react-router-dom';
 import logo from '../Assets/Shopy.svg';
 
-export default class BuyerTopnav extends Component {
+export default class SellerTopnav extends Component {
   render() {
     const { logoUrl, profilePhotoUrl, coins } = this.props; // Destructure isBuyer prop
     return (
       <div className="buyer-topnav">
         <div className="left-section">
-            <Link to="/buyerhome">
+            <Link to="/sellerhome">
               <button className='homebutton'>
                 <img src={logo} alt="Logo" className='topnav-logo' />
               </button>

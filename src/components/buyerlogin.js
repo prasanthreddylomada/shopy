@@ -1,17 +1,31 @@
 import React, { Component } from 'react';
-import './buyerlogin.css'; // You can create and customize this CSS file for styling
+import './buyerlogin.css';
 import { Link } from 'react-router-dom';
+import logo from '../Assets/Shopy.svg';
 
 class BuyerLogin extends Component {
+  constructor(props) {
+    super(props);
+
+  }
+
+  handleLogin = () => {
+    this.setState({ isBuyer: true });
+    
+  };
+  
+
   render() {
     return (
       <div className="buyer-login-container">
-        <img src="./metamask-logo.png" alt="Metamask Logo" className="logo" />
-        <Link to='/buyerhome'>
-        <button className="connect-button">login with Metamask</button>
+        <img src={logo} alt="Metamask Logo" className="home-logo"/>
+        <Link to={{
+          pathname: '/buyerhome',
+        }}>
+          <button className="connect-button" onClick={this.handleLogin}>login with Metamask</button>
         </Link>
         <Link to="/sellerlogin">
-        <button className="login-as-seller">Login as a seller?</button>
+          <button className="login-as-seller">Login as a seller?</button>
         </Link>
       </div>
     );

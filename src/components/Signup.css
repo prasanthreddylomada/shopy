@@ -37,7 +37,12 @@
   }
   /* Signup.css */
   .input-group.invalid {
-    animation: shake 0.3s;
+    animation: shake 1s;
+  }
+
+  .signup-logo{
+    margin-inline: 20px;
+    width: 200px;
   }
 
   @keyframes shake {
