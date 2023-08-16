@@ -15,7 +15,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'10'
         },
@@ -24,7 +24,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'15'
             },
@@ -33,7 +33,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'10'
         },
@@ -42,7 +42,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'15'
             },
@@ -51,7 +51,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'10'
         },
@@ -60,7 +60,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'15'
             },
@@ -69,7 +69,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'10'
         },
@@ -78,7 +78,7 @@ class SellerHome extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
             sales:'15'
             },
@@ -87,37 +87,37 @@ class SellerHome extends Component {
     customers = [
         {
             customerid:'1',
-            purchases:['1', '2', '3', '4', '5'],
+            purchases:[1],
             imageurl:'https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc',
             totalcost:'1100'
         },
         {
             customerid:'2',
-            purchases:['2'],
+            purchases:[1,2],
             imageurl:'https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc',
             totalcost:'1100'
         },
         {
             customerid:'3',
-            purchases:['2'],
+            purchases:[3],
             imageurl:'https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc',
             totalcost:'1100'
         },
         {
             customerid:'1',
-            purchases:['1', '2', '3', '4', '5'],
+            purchases:[4],
             imageurl:'https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc',
             totalcost:'1100'
         },
         {
             customerid:'2',
-            purchases:['2'],
+            purchases:[5],
             imageurl:'https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc',
             totalcost:'1100'
         },
         {
             customerid:'3',
-            purchases:['2'],
+            purchases:[2,6],
             imageurl:'https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc',
             totalcost:'1100'
         },
@@ -144,6 +144,8 @@ class SellerHome extends Component {
         const { clickedProductId } = this.state;
         const customersWithProduct = this.customers.filter(customer => {
             for (const purchase of customer.purchases) {
+                console.log('purchases',purchase);
+                console.log('productid',clickedProductId);
                 if (purchase == clickedProductId) {
                     return true;
                 }
@@ -175,7 +177,7 @@ class SellerHome extends Component {
                         </div>
                     </div>
                     <div className='right'>
-                    <h1>Product Customers</h1>
+                    <h1 className='ali'>Product Customers</h1>
                     <div className='customer-product-row'>
                         {customersWithProduct.map((customer) => (
                             <Customer
