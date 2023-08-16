@@ -10,7 +10,7 @@ class BuyProducts extends Component {
       imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
       name: 'Product 1',
       size: 'Medium',
-      price: '$20',
+      price: 20,
       category: 'Shirts',
     },
     {
@@ -18,7 +18,7 @@ class BuyProducts extends Component {
         imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
         name: 'Product 1',
         size: 'Medium',
-        price: '$20',
+        price: 20,
         category: 'Shirts',
       },
       {
@@ -26,7 +26,7 @@ class BuyProducts extends Component {
         imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
         name: 'Product 1',
         size: 'Medium',
-        price: '$20',
+        price: 20,
         category: 'Shirts',
       },
       {
@@ -34,7 +34,7 @@ class BuyProducts extends Component {
         imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
         name: 'Product 1',
         size: 'Medium',
-        price: '$20',
+        price: 20,
         category: 'Shirts',
       },
       {
@@ -42,7 +42,7 @@ class BuyProducts extends Component {
         imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
         name: 'Product 1',
         size: 'Medium',
-        price: '$20',
+        price: 20,
         category: 'Shirts',
       },
       {
@@ -50,7 +50,7 @@ class BuyProducts extends Component {
           imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
           name: 'Product 1',
           size: 'Medium',
-          price: '$20',
+          price: 20,
           category: 'Shirts',
         },
         {
@@ -58,7 +58,7 @@ class BuyProducts extends Component {
           imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
           name: 'Product 1',
           size: 'Medium',
-          price: '$20',
+          price: 20,
           category: 'Shirts',
         },
         {
@@ -66,7 +66,7 @@ class BuyProducts extends Component {
           imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
           name: 'Product 1',
           size: 'Medium',
-          price: '$20',
+          price: 20,
           category: 'Shirts',
         },
         {
@@ -74,7 +74,7 @@ class BuyProducts extends Component {
             imageUrl: 'https://imgs.search.brave.com/UhTqkdoyNgdA_Xcwbcl2kWQHQS8WvufoKWQDkTnoawI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9pLmV0/c3lzdGF0aWMuY29t/LzExMjQ5MjM5L3Iv/aWwvNGM2YWZhLzQ4/ODcyNTE5MTMvaWxf/NjAweDYwMC40ODg3/MjUxOTEzX3NnNXMu/anBn',
             name: 'Product 1',
             size: 'Medium',
-            price: '$20',
+            price: 20,
             category: 'Shirts',
           },
         {
@@ -82,7 +82,7 @@ class BuyProducts extends Component {
         imageUrl: 'product2.jpg',
         name: 'Product 2',
         size: 'Large',
-        price: '$30',
+        price: 30,
         category: 'Pants',
         },
   ];

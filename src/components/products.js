@@ -57,9 +57,10 @@ class Products extends Component {
           <BuyPopup
             onClose={this.closePopup}
             onPurchase={this.handlePurchase}
-            numberOfCoins={numberOfCoins} // Pass numberOfCoins as a prop
+            numberOfCoins={numberOfCoins}
             onSliderChange={this.handleSliderChange}
-            coins={coins} // Pass the slider change handler
+            coins={coins} 
+            price={price}
           />
         )}
       </div>

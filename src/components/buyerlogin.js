@@ -9,10 +9,6 @@ class BuyerLogin extends Component {
 
   }
 
-  handleLogin = () => {
-    this.setState({ isBuyer: true });
-    
-  };
   
 
   render() {
@@ -22,7 +18,7 @@ class BuyerLogin extends Component {
         <Link to={{
           pathname: '/buyerhome',
         }}>
-          <button className="connect-button" onClick={this.handleLogin}>login with Metamask</button>
+          <button className="connect-button" >login with Metamask</button>
         </Link>
         <Link to="/sellerlogin">
           <button className="login-as-seller">Login as a seller?</button>

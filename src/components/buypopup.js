@@ -3,7 +3,7 @@ import './BuyPopop.css';
 
 class BuyPopup extends Component {
   render() {
-    const { onClose, onPurchase, numberOfCoins, onSliderChange ,coins} = this.props;
+    const { onClose, onPurchase, numberOfCoins, onSliderChange ,coins,price} = this.props;
 
     return (
       <div className="buy-popup-overlay">
@@ -13,7 +13,7 @@ class BuyPopup extends Component {
           <input
             type="range"
             min="0"
-            max={coins}
+            max={price*0.3}
             value={numberOfCoins}
             onChange={onSliderChange}
           />
