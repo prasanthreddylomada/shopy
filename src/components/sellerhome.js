@@ -7,7 +7,12 @@ import SellerTopnav from './sellertopnav';
 class SellerHome extends Component {
     state = {
         clickedProductId: null,
+        coins: 100,
     };
+
+    handleSetCoins = (newCoinsValue) => {
+        this.setState({ coins: newCoinsValue });
+      };
 
     sellerproducts = [
         {
@@ -141,7 +146,7 @@ class SellerHome extends Component {
     };
 
     render() {
-        const { clickedProductId } = this.state;
+        const { clickedProductId,coins} = this.state;
         const customersWithProduct = this.customers.filter(customer => {
             for (const purchase of customer.purchases) {
                 console.log('purchases',purchase);
@@ -157,7 +162,7 @@ class SellerHome extends Component {
                 <SellerTopnav
                     logoUrl="https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc"
                     profilePhotoUrl="https://imgs.search.brave.com/5nZjuhiVcfDbdmE3t0L62RDU4HuIw9Wbej4KGq-NYco/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9idWZm/ZXIuY29tL2xpYnJh/cnkvY29udGVudC9p/bWFnZXMvMjAyMi8w/My9hbWluYS5wbmc"
-                    coins={100}
+                    coins={coins}
                 />  
                 <div className='main-container'>
                     <div className='left'>
@@ -186,6 +191,7 @@ class SellerHome extends Component {
                                 purchases={customer.purchases}
                                 imageurl={customer.imageurl}
                                 totalcost={customer.totalcost}
+                                setcoins={this.handleSetCoins}
                             />
                         ))}
                     </div>

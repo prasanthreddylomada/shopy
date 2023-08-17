@@ -87,8 +87,9 @@ class BuyProducts extends Component {
         },
   ];
 
+
   render() {
-    const { selectedCategoryIndex ,coins,onPurchase} = this.props;
+    const { selectedCategoryIndex ,coins,onPurchase, onSetCoins } = this.props;
 
     const selectedCategory = this.categories[selectedCategoryIndex];
     const filteredProducts = this.productsData.filter(
@@ -106,6 +107,7 @@ class BuyProducts extends Component {
             price={product.price}
             coins={coins}
             onPurchase={onPurchase}
+            onSetCoins={onSetCoins}
           />
         ))}
       </div>

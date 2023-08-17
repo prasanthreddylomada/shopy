@@ -23,8 +23,9 @@ class Products extends Component {
 
   handlePurchase = () => {
     const { numberOfCoins } = this.state;
-    const { onPurchase } = this.props;
-    onPurchase(numberOfCoins);
+    const { onPurchase,onSetCoins } = this.props;
+    // onPurchase(numberOfCoins);
+    onSetCoins(100);
     console.log('Purchase confirmed');
     console.log('Number of Coins:', this.state.numberOfCoins); // Use numberOfCoins state
     this.closePopup();

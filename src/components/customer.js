@@ -3,7 +3,7 @@ import './Customer.css';
 
 const Customer = (props) => {
     const [donatePopupOpen, setDonatePopupOpen] = useState(false);
-    const [donateAmount, setDonateAmount] = useState('');
+    const [donateAmount, setDonateAmount] = useState(0);
 
     const handleDonateClick = () => {
         setDonatePopupOpen(true);
@@ -11,14 +11,15 @@ const Customer = (props) => {
 
     const handleDonateCancel = () => {
         setDonatePopupOpen(false);
-        setDonateAmount('');
+        setDonateAmount(0);
     };
 
     const handleDonateConfirm = () => {
-        if (donateAmount) {
+        if (donateAmount > 0) {
             console.log(`Donating ${donateAmount} to Customer ${props.customerid}`);
             setDonatePopupOpen(false);
-            setDonateAmount('');
+            props.setcoins(donateAmount);
+            setDonateAmount(0);
         }
     };
 
@@ -39,11 +40,13 @@ const Customer = (props) => {
                             <div className='donate-question'>
                                 <p>Select the amount to be donated:</p>
                                 <input
-                                    type='number'
-                                    placeholder='Enter amount'
+                                    type='range'
+                                    min={0}
+                                    max={100}
                                     value={donateAmount}
-                                    onChange={(e) => setDonateAmount(e.target.value)}
+                                    onChange={(e) => setDonateAmount(parseInt(e.target.value))}
                                 />
+                                <p>${donateAmount}</p>
                             </div>
                             <div className='donate-buttons'>
                                 <button className='popup-button' onClick={handleDonateConfirm}>Donate</button>

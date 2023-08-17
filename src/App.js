@@ -6,6 +6,7 @@ import Signup from './components/signup';
 import SellerLogin from './components/sellerlogin';
 import BuyerHome from './components/buyerhome';
 import SellerHome from './components/sellerhome';
+import AddProduct from './components/addPoduct';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
           <Route path='/signup' element={<Signup/>}/>
           <Route path='/buyerhome' element={<BuyerHome/>}/>
           <Route path='/sellerhome' element={<SellerHome/>}/>
+          <Route path='/sellerhome/addproduct' element={<AddProduct/>}/>
         </Routes>
       </Router>
     </div>

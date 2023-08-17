@@ -17,6 +17,10 @@ class BuyerHome extends Component {
     this.setState((prevState) => ({ coins: prevState.coins - numberOfCoins }));
   };
 
+  handleSetCoins = (newCoinsValue) => {
+    this.setState({ coins: newCoinsValue });
+  };
+
   handleCategorySelect = (index) => {
     this.setState({ selectedCategoryIndex: index });
   };
@@ -35,7 +39,7 @@ class BuyerHome extends Component {
           selectedCategoryIndex={selectedCategoryIndex}
           onSelectCategory={this.handleCategorySelect}
         />
-        <BuyProducts selectedCategoryIndex={selectedCategoryIndex} coins={coins} onPurchase={this.handlePurchase}/>
+        <BuyProducts selectedCategoryIndex={selectedCategoryIndex} coins={coins} onPurchase={this.handlePurchase} onSetCoins={this.handleSetCoins}/>
       </div>
     );
   }
