@@ -1,67 +1,83 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react'; // Added import for useState and useEffect
 import './products.css';
 import BuyPopup from './buypopup';
+import Web3Provider from './web3';
 
-class Products extends Component {
-  constructor(props) {
-    super(props);
+function Products(props) { // Changed from class component to functional component
+  // Replaced this.state with useState for state management
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [useCoins, setUseCoins] = useState(false);
+  const [numberOfCoins, setNumberOfCoins] = useState(0);
+  const web3State = Web3Provider();
+ ;
 
-    this.state = {
-      isPopupOpen: false,
-      useCoins: false,
-      numberOfCoins: 0, // Add the numberOfCoins state
-    };
-  }
 
-  openPopup = () => {
-    this.setState({ isPopupOpen: true });
+  // Replaced class methods with functional component syntax
+  const openPopup = () => {
+    setPopupOpen(true);
+  };
+  
+  const closePopup = () => {
+    setPopupOpen(false);
   };
 
-  closePopup = () => {
-    this.setState({ isPopupOpen: false });
+  const handlePurchase = async () => {
+    console.log('Purchase Started');
+    try {
+      if (!web3State.contract) {
+        console.error('Contract instance not available.');
+        return;
+      }
+
+      const num2 = await web3State.contract.methods.getFive().call();
+      const num = parseInt(num2.toString());  
+      setNumberOfCoins(num);
+  
+      console.log('Number of Coins:', num);
+      closePopup();
+    } catch (error) {
+      console.error('Error while calling contract function:', error);
+    }
+    console.log('Purchase Completed');
   };
 
-  handlePurchase = () => {
-    console.log('Purchase confirmed');
-    console.log('Number of Coins:', this.state.numberOfCoins); // Use numberOfCoins state
-    this.closePopup();
+  // useEffect(() => {
+    // console.log('Number of Coins:', numberOfCoins);
+  // }, [numberOfCoins]);
+
+  const handleSliderChange = (event) => {
+    setNumberOfCoins(parseInt(event.target.value));
   };
 
-  handleSliderChange = (event) => {
-    this.setState({ numberOfCoins: parseInt(event.target.value) }); // Update numberOfCoins state
-  };
+  const { imageUrl, name, size, price, coins } = props;
 
-  render() {
-    const { imageUrl, name, size, price,coins } = this.props;
-    const { isPopupOpen, useCoins, numberOfCoins } = this.state;
-
-    return (
-      <div className="product-container">
-        <img src={imageUrl} alt={name} className="product-image" />
-        <div className="product-details">
-          <div className="left-part">
-            <h3>{name}</h3>
-            <p>Size: {size}</p>
-            <p>Price: {price}</p>
-          </div>
-          <div className="right-part">
-            <button className="buy-button" onClick={this.openPopup}>
-              Buy
-            </button>
-          </div>
+  // Return JSX for rendering
+  return (
+    <div className="product-container">
+      <img src={imageUrl} alt={name} className="product-image" />
+      <div className="product-details">
+        <div className="left-part">
+          <h3>{name}</h3>
+          <p>Size: {size}</p>
+          <p>Price: {price}</p>
         </div>
-        {isPopupOpen && (
-          <BuyPopup
-            onClose={this.closePopup}
-            onPurchase={this.handlePurchase}
-            numberOfCoins={numberOfCoins} // Pass numberOfCoins as a prop
-            onSliderChange={this.handleSliderChange}
-            coins={coins} // Pass the slider change handler
-          />
-        )}
+        <div className="right-part">
+          <button className="buy-button" onClick={openPopup}>
+            Buy
+          </button>
+        </div>
       </div>
-    );
-  }
+      {isPopupOpen && (
+        <BuyPopup
+          onClose={closePopup}
+          numberOfCoins={numberOfCoins}
+          onSliderChange={handleSliderChange}
+          onPurchase={handlePurchase}
+          coins={coins}
+        />
+      )}
+    </div>
+  );
 }
 
 export default Products;
