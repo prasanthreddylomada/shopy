@@ -21,14 +21,15 @@ function Products(props) { // Changed from class component to functional compone
     setPopupOpen(false);
   };
 
-  handlePurchase = () => {
-    const { numberOfCoins } = this.state;
-    const { onPurchase,onSetCoins } = this.props;
-    // onPurchase(numberOfCoins);
-    onSetCoins(100);
-    console.log('Purchase confirmed');
-    console.log('Number of Coins:', this.state.numberOfCoins); // Use numberOfCoins state
-    this.closePopup();
+  // handlePurchase = () => {
+  //   const { numberOfCoins } = this.state;
+  //   const { onPurchase,onSetCoins } = this.props;
+  //   // onPurchase(numberOfCoins);
+  //   onSetCoins(100);
+  //   console.log('Purchase confirmed');
+  //   console.log('Number of Coins:', this.state.numberOfCoins); // Use numberOfCoins state
+  //   this.closePopup();
+    
   const handlePurchase = async () => {
     console.log('Purchase Started');
     try {
@@ -69,24 +70,24 @@ function Products(props) { // Changed from class component to functional compone
             <p>Price: {price}</p>
           </div>
           <div className="right-part">
-            <button className="buy-button" onClick={this.openPopup}>
+            <button className="buy-button" onClick={openPopup}>
               Buy
             </button>
           </div>
         </div>
         {isPopupOpen && (
           <BuyPopup
-            onClose={this.closePopup}
-            onPurchase={this.handlePurchase}
+            onClose={closePopup}
+            onPurchase={handlePurchase}
             numberOfCoins={numberOfCoins}
-            onSliderChange={this.handleSliderChange}
+            onSliderChange={handleSliderChange}
             coins={coins} 
             price={price}
           />
         )}
       </div>
     );
-  }
+  
 }
 
 export default Products;
