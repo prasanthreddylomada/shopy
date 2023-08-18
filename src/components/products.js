@@ -1,24 +1,24 @@
-import React, { Component } from 'react';
+import React, { useState, useEffect } from 'react'; // Added import for useState and useEffect
 import './products.css';
 import BuyPopup from './buypopup';
+import Web3Provider from './web3';
 
-class Products extends Component {
-  constructor(props) {
-    super(props);
+function Products(props) { // Changed from class component to functional component
+  // Replaced this.state with useState for state management
+  const [isPopupOpen, setPopupOpen] = useState(false);
+  const [useCoins, setUseCoins] = useState(false);
+  const [numberOfCoins, setNumberOfCoins] = useState(0);
+  const web3State = Web3Provider();
+ ;
 
-    this.state = {
-      isPopupOpen: false,
-      useCoins: false,
-      numberOfCoins: 0, // Add the numberOfCoins state
-    };
-  }
 
-  openPopup = () => {
-    this.setState({ isPopupOpen: true });
+  // Replaced class methods with functional component syntax
+  const openPopup = () => {
+    setPopupOpen(true);
   };
-
-  closePopup = () => {
-    this.setState({ isPopupOpen: false });
+  
+  const closePopup = () => {
+    setPopupOpen(false);
   };
 
   handlePurchase = () => {
@@ -29,15 +29,35 @@ class Products extends Component {
     console.log('Purchase confirmed');
     console.log('Number of Coins:', this.state.numberOfCoins); // Use numberOfCoins state
     this.closePopup();
+  const handlePurchase = async () => {
+    console.log('Purchase Started');
+    try {
+      if (!web3State.contract) {
+        console.error('Contract instance not available.');
+        return;
+      }
+
+      const num2 = await web3State.contract.methods.getFive().call();
+      const num = parseInt(num2.toString());  
+      setNumberOfCoins(num);
+  
+      console.log('Number of Coins:', num);
+      closePopup();
+    } catch (error) {
+      console.error('Error while calling contract function:', error);
+    }
+    console.log('Purchase Completed');
   };
 
-  handleSliderChange = (event) => {
-    this.setState({ numberOfCoins: parseInt(event.target.value) }); // Update numberOfCoins state
+  // useEffect(() => {
+    // console.log('Number of Coins:', numberOfCoins);
+  // }, [numberOfCoins]);
+
+  const handleSliderChange = (event) => {
+    setNumberOfCoins(parseInt(event.target.value));
   };
 
-  render() {
-    const { imageUrl, name, size, price,coins } = this.props;
-    const { isPopupOpen, useCoins, numberOfCoins } = this.state;
+  const { imageUrl, name, size, price, coins } = props;
 
     return (
       <div className="product-container">
